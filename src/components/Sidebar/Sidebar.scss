@@ -1,0 +1,12 @@
+.Sidebar{
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    position: fixed;
+    top: 200px;
+    right: 26px;
+
+    & > a{
+        margin-bottom: 10px;
+    }
+}

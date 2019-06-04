@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>ic_mail</title>
+    <desc>Created with Sketch.</desc>
+    <g id="GTG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="one-page" transform="translate(-1153.000000, -289.000000)">
+            <g id="ic_sns" transform="translate(1154.000000, 200.000000)">
+                <g id="ic_mail" transform="translate(0.000000, 90.000000)">
+                    <g>
+                        <circle id="Oval" stroke="#FFFFFF" cx="10" cy="10" r="10"></circle>
+                        <g id="message-closed-envelope" transform="translate(4.000000, 6.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <path d="M10.5757347,0 L1.42429675,0 C0.638945663,0 0,0.538585314 0,1.20057748 L0,6.79942252 C0,7.46141469 0.638945663,8 1.42429675,8 L10.5757347,8 C11.3610857,8 12,7.46141469 12,6.79942252 L12,1.20057748 C12,0.538585314 11.3610857,0 10.5757347,0 Z M10.5757347,6.94008483 L1.42429675,6.94008483 C1.30885566,6.94008483 1.20760919,6.87437075 1.20760919,6.79942252 L1.20760919,1.94093589 L5.34656139,5.00805232 C5.43141499,5.0709548 5.53931911,5.10557598 5.65042644,5.10557598 L6.34944794,5.10560354 C6.46049247,5.10560354 6.5684594,5.0709548 6.65334439,5.00805232 L10.792485,1.94082563 L10.792485,6.79947765 C10.7924222,6.87437075 10.6911443,6.94008483 10.5757347,6.94008483 Z M6.0000157,4.05315839 L1.97436911,1.05991517 L10.0256623,1.05991517 L6.0000157,4.05315839 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

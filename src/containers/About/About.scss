@@ -1,0 +1,58 @@
+@import '../../styles/_fonts.scss';
+@import '../../styles/_colors.scss';
+
+.About{
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    height: calc(100vh - 24%);
+    padding: 12% 8%;
+    color: $fontColor;
+
+    & > h1{
+        text-align: center;
+        font-family: Lato;
+        font-weight: 400;
+    }
+
+    & > div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 50px;
+
+        & > div{
+            &:nth-child(1){
+                margin-right: 174px;
+
+                & > div{
+                    width: 470px;
+                    height: 370px;
+                    background-image: url("https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/39522485_473098519854159_6307262768139468800_o.jpg?_nc_cat=108&_nc_ht=scontent-icn1-1.xx&oh=5844331b6b24b8fc834aeba8d80c7de5&oe=5D9EEF5B");
+                    background-size: 100%;
+                    border-radius: 12px;
+                    box-shadow: 10px 10px 10px 0 rgba(2, 0, 0, 0.1);
+                }
+            }
+
+            &:nth-child(2){
+                & > div{
+                    &:not(:first-child){
+                        margin-top: 50px;
+                    }
+                    
+                    & > h2{
+                        margin-top: 0;
+                    }
+                    & > span{
+                        padding-bottom: 4px;
+                    }
+
+                    & > p{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

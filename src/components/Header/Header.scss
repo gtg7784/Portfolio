@@ -1,0 +1,40 @@
+@import '../../styles/_fonts.scss';
+@import '../../styles/_colors.scss';
+
+.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    width: 84%;
+    background-color: rgba(0,0,0,0);
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+
+    & > a{
+        font-family: 'SeoulHangangM';
+        text-decoration: none;
+        color: $fontColor;
+    }
+
+    & > ul{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        float: right;
+
+        & > li{
+            &:not(:first-child){
+                margin-left: 20px;
+            }
+
+            & > a{
+                font-family: 'Lato';
+                text-decoration: none;
+                color: $fontColor;
+            }
+        }
+    }
+}

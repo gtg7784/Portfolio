@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="548px" height="740px" viewBox="0 0 548 740" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>element_background_shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-4.33735261%" y1="76.0203279%" x2="104.432497%" y2="35.7947024%" id="linearGradient-1">
+            <stop stop-color="#FE7891" offset="0%"></stop>
+            <stop stop-color="#FEBA85" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="GTG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="one-page" transform="translate(-652.000000, 0.000000)" fill="url(#linearGradient-1)">
+            <path d="M824.429607,-0.463756845 C709.476536,81.8527477 652,204.340667 652,367 C652,529.659333 709.476536,653.992667 824.429607,740 L1257,740 L1248.17986,511.585255 L1248.17986,-24 L824.429607,-0.463756845 Z" id="element_background_shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,76 @@
+@import '../../styles/_fonts.scss';
+@import '../../styles/_colors.scss';
+
+.Main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 84%;
+    height: calc(100vh - 36%);
+    color: $fontColor;
+    padding: 18% 8%;
+
+    & > div{
+        &:nth-child(1){
+            display: flex;
+            flex-direction: column;
+
+            & > h1{
+                width: 85px;
+                font-family: 'SeoulHangangM';
+                text-shadow: 10px 10px 10px rgba(2, 0, 0, 0.1);
+                margin: 0;
+                margin-bottom: 10px;
+            }
+        
+            & > span{
+                width: 360px;
+                font-family: OpenSans;
+                font-size: 22px;
+                margin-bottom: 60px;
+            }
+        
+            & > button{
+                width: 130px;
+                height: 40px;
+                border-radius: 10px;
+                border: 0px;
+                color: $fontColor;
+                background-image: $assetColor;
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 0;
+            }
+        
+            & > div{
+                margin-top: 72px;
+        
+                & > img{
+                    width: 250px;
+                    height: 240px;
+
+                    &:first-child{
+                        margin-right: 75px;
+                    }
+                    
+                    &:nth-child(2){
+                        margin-bottom: -11.5px;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(2){
+            // padding-right: 200px;
+            & > div{
+                width: 500px;
+                height: 400px;
+                background-image: url("https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/39522485_473098519854159_6307262768139468800_o.jpg?_nc_cat=108&_nc_ht=scontent-icn1-1.xx&oh=5844331b6b24b8fc834aeba8d80c7de5&oe=5D9EEF5B");
+                background-size: 100%;
+                border-radius: 12px;
+                box-shadow: 10px 10px 10px 0 rgba(2, 0, 0, 0.1);
+            }
+        }
+    }
+}
