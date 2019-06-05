@@ -6,9 +6,9 @@
     flex-direction: row;
     justify-content: space-between;
     width: 84%;
-    height: calc(100vh - 36%);
+    height: calc(100vh - 28%);
     color: $fontColor;
-    padding: 18% 8%;
+    padding: 14% 8%;
 
     & > div{
         &:nth-child(1){

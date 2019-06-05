@@ -5,8 +5,8 @@ import './Awards.scss';
 class Awards extends Component {
   render() {
     return (
-      <div className="Awards section">
-          Awards
+      <div className="Awards" id="Awards">
+          <h1>Awards</h1>
       </div>
     );
   }

@@ -8,7 +8,7 @@ import './Main.scss';
 class Main extends Component {
   render() {
     return (
-      <div className="Main section">
+      <div className="Main" id="Main">
         <div>
           <h1>고태건</h1>
           <span>The typeface doesn’t really matter. <br/>

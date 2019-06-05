@@ -1,0 +1,66 @@
+@import '../../styles/_fonts.scss';
+@import '../../styles/_colors.scss';
+
+.Projects{
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    height: calc(100vh - 24%);
+    padding: 12% 8%;
+    color: $fontColor;
+    overflow-x: scroll;
+
+    & > h1{
+        text-align: center;
+        font-family: Lato;
+        font-weight: 400;
+    }
+
+    & > div{
+        &:not(:last-child){
+            margin-bottom: 150px;
+        }
+
+        & > div{
+            width: 100%;
+            &:nth-child(1){
+                display: flex;
+                justify-content: space-between;
+
+                & > span{
+                    font-family: 'AppleSDGothicNeo';
+                }
+            }
+
+            &:nth-child(2){
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                overflow-x: scroll !important;
+
+                & > div{
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .cards{
+        min-width: 228px !important; 
+        min-height: 370px !important;
+        border-radius: 12px;
+        box-shadow: 0 24px 42px 0 rgba(0, 0, 0, 0.15);
+        background-color: #222222;
+    }
+
+    .year{
+        font-family: 'AppleSDGothicNeo';
+        font-size: 32px;
+        font-weight: bold;
+        background-color: #fff !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+    }
+}

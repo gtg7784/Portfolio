@@ -6,13 +6,13 @@ class Header extends Component {
   render() {
     return (
         <nav className="Header">
-            <a href="#">고태건</a>
+            <a href="#Main">고태건</a>
 
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Awards</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Works">Works</a></li>
+                <li><a href="#Awards">Awards</a></li>
             </ul>
         </nav>
     );

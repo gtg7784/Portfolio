@@ -5,7 +5,7 @@ import './About.scss';
 class About extends Component {
   render() {
     return (
-      <div className="About section">
+      <div className="About" id="About">
         <h1>About</h1>
         <div>
           <div>
@@ -13,7 +13,7 @@ class About extends Component {
           </div>
           <div>
             <div>
-              <h2>PROFILE</h2>
+              <h1>PROFILE</h1>
               <span>고태건 2003. 08. 04</span> <br />
               <p>
               한줄소개 <br/>
@@ -23,7 +23,7 @@ class About extends Component {
               </p>
             </div>
             <div>
-              <h2>BIOGRAPHY</h2>
+              <h1>BIOGRAPHY</h1>
               2010.03 ~ 2016.01 ffffffff <br/>
               2016.02 ~ 2019.01 ffffffff <br/>
               2019.03 ~ 

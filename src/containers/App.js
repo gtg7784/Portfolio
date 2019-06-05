@@ -6,8 +6,7 @@ import Sidebar from '../components/Sidebar/Sidebar'
 
 import Main from './Main/Main'
 import About from './About/About'
-import Dev from './Dev/Dev'
-import Security from './Security/Security'
+import Projects from './Projects/Projects'
 import Works from './Works/Works'
 import Awards from './Awards/Awards'
 
@@ -23,8 +22,7 @@ class App extends Component {
         
         <Main />
         <About />
-        <Dev />
-        <Security />
+        <Projects />
         <Works />
         <Awards/>
       </div>
