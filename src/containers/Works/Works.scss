@@ -6,7 +6,7 @@
     flex-direction: column;
     width: 84%;
     height: calc(100vh - 24%);
-    padding: 12% 8%;
+    padding: 8%;
     color: $fontColor;
     overflow-x: scroll;
 
@@ -14,5 +14,53 @@
         text-align: center;
         font-family: Lato;
         font-weight: 400;
+    }
+
+    & > div{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        & > div{
+            &:nth-child(1){
+                width: 330px;
+                height: 470px;
+                border-radius: 15px;
+                background-color: #fff;
+                margin-right: 40px;
+            }
+
+            &:nth-child(2){
+                display: flex;
+                flex-direction: column;
+
+                & > div{
+                    &:nth-child(1){
+                        width: 480px;
+                        height: 220px;
+                        border-radius: 15px;
+                        background-color: #ffffff;                      
+                    }
+
+                    &:nth-child(2){
+                        margin-top: 40px;
+                        display: flex;
+                        flex-direction: row;
+
+                        & > div{
+                            width: 220px;
+                            height: 210px;
+                            border-radius: 15px;
+                            background-color: #ffffff;
+
+                            &:nth-child(1){
+                                margin-right: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
