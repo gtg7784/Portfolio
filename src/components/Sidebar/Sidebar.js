@@ -14,7 +14,7 @@ class Sidebar extends Component {
         <a href="https://facebook.com/gtg7784"><img src={ic_fb} alt="facebook"/></a>
         <a href="https://instagram.com/gtg7784"><img src={ic_insta} alt="instagram"/></a>
         <a href="https://github.com/gtg7784"><img src={ic_github} alt="github"/></a>
-        <a href="mailto://gtg7784@naver.com"><img src={ic_mail} alt="mail"/></a>
+        <a href="mailto:gtg7784@naver.com"><img src={ic_mail} alt="mail"/></a>
       </div>
     );
   }
