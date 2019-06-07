@@ -7,6 +7,7 @@ import LandingIllust2 from "../../assets/landing-illust-2.svg";
 import LandingIllust3 from "../../assets/landing-illust-3.svg";
 import LandingIllust4 from "../../assets/landing-illust-4.svg";
 import LandingIllust5 from "../../assets/landing-illust-5.svg";
+import LandingIllust6 from "../../assets/landing-illust-6.svg";
 
 class Illust extends Component {
   render() {
@@ -16,7 +17,8 @@ class Illust extends Component {
         <img src={LandingIllust2} alt="" />
         <img src={LandingIllust3} alt="" />
         <img src={LandingIllust4} alt="" />
-        <img src={LandingIllust5} alt=""/>
+        <img src={LandingIllust5} alt="" />
+        <img src={LandingIllust6} alt="" />
       </div>
     );
   }

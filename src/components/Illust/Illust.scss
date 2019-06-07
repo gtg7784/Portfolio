@@ -1,3 +1,5 @@
+@import '../../styles/breakpoints';
+
 .Illust{
     width: 100%;
     position: absolute;
@@ -7,39 +9,100 @@
         position: absolute;
 
         &:nth-child(1){
-            right: 160px;
-            top: calc(50vh - 217px);
-            width: 514px;
-            height: 435px;
+            @media (min-width: $small){
+                right: 160px;
+                top: calc(50vh - 217px);
+                width: 514px;
+                height: 435px;
+            }
+
+            @media (max-width: $small) {
+                width: 268px;
+                height: 228px;
+                top: 294px;
+                right: 0;
+                left: 0;
+                margin-right: auto;
+                margin-left: auto;
+            }
         }
 
         &:nth-child(2){
-            top: calc(100vh + 300px);
-            right: calc(50% + 80px);;
+            @media (min-width: $small) {
+                top: calc(100vh + 300px);
+                right: calc(50% + 80px);
+            }
+            @media (max-width: $small) {
+                width: 220px;
+                height: 157px;
+                top: 736px;
+                right: 0;
+                left: 0;
+                margin-right: auto;
+                margin-left: auto;
+            }
         }
 
         &:nth-child(3){
-            top: 2827px;
             left: 0;
             right: 0;
             margin-left: auto;
             margin-right: auto;
+
+            @media (min-width: $small) {
+                top: 2827px;
+            }
+            @media (max-width: $small) {
+                width: 318px;
+                height: 263px;       
+                top: 1596px;  
+            }
         }
 
         &:nth-child(4){
-            top: 4274px;
             left: 0;
             right: 0;
             margin-left: auto;
             margin-right: auto;
+
+            @media (min-width: $small) {
+                display: none;
+            }
+            @media (max-width: $small) {
+                top: 2140px;
+            }
         }
 
         &:nth-child(5){
-            top: 5371px;
             left: 0;
             right: 0;
             margin-left: auto;
             margin-right: auto;
+
+            @media (min-width: $small) {
+                top: 4274px;
+            }
+            @media (max-width: $small) {
+                top: 2712px;
+                width: 350px;
+                height: 301px;
+            }
+        }
+
+        &:nth-child(6){
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+
+            @media (min-width: $small) {
+                top: 5371px;
+            }
+            @media (max-width: $small) {
+                top: 3338px;
+                width: 355px;
+                height: 222px;
+            }
         }
     }
 }

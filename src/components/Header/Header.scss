@@ -1,17 +1,26 @@
-@import '../../styles/_fonts.scss';
-@import '../../styles/_colors.scss';
+@import '../../styles/fonts';
+@import '../../styles/colors';
+@import '../../styles/breakpoints';
 
 .Header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 8%;
-    width: 84%;
+    width: 84vw;
     background-color: rgba(0,0,0,0);
     z-index: 1000;
     position: fixed;
     top: 0;
+
+    @media (min-width: $small) {
+        padding: 25px 8%;
+    }
+
+    @media (max-width: $small) {
+        padding: 20px 30px;
+    }
+    
 
     & > a{
         font-family: 'SeoulHangangM';
@@ -28,7 +37,13 @@
 
         & > li{
             &:not(:first-child){
-                margin-left: 20px;
+                @media (min-width: $small) {
+                    margin-left: 20px;
+                }
+
+                @media (max-width: $small) {
+                    margin-left: 10px;
+                }
             }
 
             & > a{
