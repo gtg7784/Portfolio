@@ -1,4 +1,3 @@
-@import '../../styles/fonts';
 @import '../../styles/colors';
 @import '../../styles/breakpoints';
 
@@ -33,7 +32,6 @@
 
     & > span{
         text-shadow: 10px 10px 10px rgba(2, 0, 0, 0.1);
-        font-family: NotoSansCJKkr;
 
         @media (min-width: $small) {
             font-size: 26px;

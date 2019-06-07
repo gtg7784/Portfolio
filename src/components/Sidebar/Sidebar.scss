@@ -9,6 +9,12 @@
     right: 26px;
 
     & > a{
-        margin-bottom: 10px;
+        @media (min-width: $small) {
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: $small) {
+            margin-bottom: 10px;
+        }
     }
 }

@@ -1,4 +1,3 @@
-@import '../../styles/fonts';
 @import '../../styles/colors';
 @import '../../styles/breakpoints';
 
@@ -14,7 +13,7 @@
     }
 
     @media (max-width: $small) {
-        margin-top: 540px;
+        margin-top: 500px;
     }
 
     & > h1{
