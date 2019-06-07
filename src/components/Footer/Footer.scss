@@ -1,13 +1,22 @@
 @import '../../styles/colors';
+@import '../../styles/breakpoints';
 
 .Footer{
     display: flex;
     justify-content: space-between;
-    padding: 20px 4%;
+    padding: 20px 40px;
     color: $fontColor;
+
+    @media (max-width: $small) {
+        font-size: 10px;
+    }
 
     & > div > a{
         text-decoration: none;
         color: $fontColor;
+
+        @media (max-width: $small) {
+            font-size: 10px;
+        }
     }
 }

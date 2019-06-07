@@ -1,38 +1,77 @@
-@import '../../styles/_fonts.scss';
-@import '../../styles/_colors.scss';
+@import '../../styles/fonts';
+@import '../../styles/colors';
+@import '../../styles/breakpoints';
 
 .Main{
     display: flex;
-    height: calc(100vh - 270px);
     flex-direction: column;
-    padding-left: 160px;
-    padding-top: 270px;
     color: $fontColor;
 
+    @media (min-width: $small) {
+        height: calc(100vh - 270px);
+        padding-left: 160px;
+        padding-top: 270px;
+    }
+
+    @media (max-width: $small){
+        padding-top: 118px;
+        align-items: center;
+    }
+
     & > h1{
-        font-size: 36px;
         font-family: SeoulHangangEB;
         text-shadow: 10px 10px 10px rgba(2, 0, 0, 0.1);
+        @media (min-width: $small) {
+            font-size: 36px;
+        }
+
+        @media (max-width: $small) {
+            font-size: 24px;
+            margin: 0;
+        }
     }
 
     & > span{
         text-shadow: 10px 10px 10px rgba(2, 0, 0, 0.1);
         font-family: NotoSansCJKkr;
-        font-size: 26px;
+
+        @media (min-width: $small) {
+            font-size: 26px;
+        }
+
+        @media (max-width: $small) {
+            margin-top: 14px;
+            font-size: 14px;
+            width: 212px;
+            text-align: center;
+        }
     }
 
     & > a{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 60px;
-        width: 130px;
-        height: 40px;
-        border-radius: 10px;
-        font-size: 16px;
         color: #fff;
         background-image: $assetColor;
         text-decoration: none;
+
+        @media (min-width: $small) {
+            width: 130px;
+            height: 40px;
+            border-radius: 10px;
+            margin-top: 60px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        @media (max-width: $small) {
+            width: 100px;
+            height: 30px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 22px;
+        }
     }
 
 }

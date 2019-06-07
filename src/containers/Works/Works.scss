@@ -1,61 +1,119 @@
-@import '../../styles/_fonts.scss';
-@import '../../styles/_colors.scss';
+@import '../../styles/fonts';
+@import '../../styles/colors';
+@import '../../styles/breakpoints';
 
 .Works{
     display: flex;
     flex-direction: column;
-    margin-top: 374px;
-    height: calc(100vh - 150px);
-    padding: 150px;
     color: $fontColor;
-    overflow-x: scroll;
+
+    @media (min-width: $small) {
+        margin-top: 374px;
+        height: calc(100vh - 150px);
+        padding: 150px;
+    }
+
+    @media (max-width: $small) {
+        margin-top: 540px;
+    }
 
     & > h1{
         text-align: center;
-        font-family: Lato;
-        font-weight: 400;
+
+        @media (max-width: $small) {
+            font-weight: 400;
+        }
+        
+        @media (max-width: $small) {
+            font-size: 24px;
+            font-weight: 500;
+        }
     }
 
     & > div{
         margin-top: 40px;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+
+        @media (min-width: $small) {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        @media (max-width: $small) {
+            flex-direction: column;
+            align-items: center;
+        }
 
         & > div{
             &:nth-child(1){
-                width: 330px;
-                height: 470px;
-                border-radius: 15px;
                 background-color: #fff;
-                margin-right: 40px;
+
+                @media (min-width: $small) {
+                    width: 330px;
+                    height: 470px;
+                    border-radius: 15px;
+                    margin-right: 40px;
+                }
+
+                @media (max-width: $small) {
+                    width: 219px;
+                    height: 221px;
+                    border-radius: 4px;
+                    margin-bottom: 8px;
+                }
             }
 
             &:nth-child(2){
                 display: flex;
                 flex-direction: column;
+                align-items: center;
 
                 & > div{
                     &:nth-child(1){
-                        width: 480px;
-                        height: 220px;
-                        border-radius: 15px;
-                        background-color: #ffffff;                      
+                        background-color: #ffffff;  
+
+                        @media (min-width: $small) {
+                            width: 480px;
+                            height: 220px;
+                            border-radius: 15px;
+                            margin-bottom: 40px;
+                        }
+
+                        @media (max-width: $small) {
+                            width: 219px;
+                            height: 110px;
+                            border-radius: 4px;
+                            margin-bottom: 8px;
+                        }                    
                     }
 
                     &:nth-child(2){
-                        margin-top: 40px;
                         display: flex;
                         flex-direction: row;
 
                         & > div{
-                            width: 220px;
-                            height: 210px;
-                            border-radius: 15px;
                             background-color: #ffffff;
 
+                            @media (min-width: $small) {
+                                width: 220px;
+                                height: 210px;
+                                border-radius: 15px;
+                            }
+
+                            @media (max-width: $small) {
+                                width: 106px;
+                                height: 92px;
+                                border-radius: 4px;
+                            }
+
                             &:nth-child(1){
-                                margin-right: 40px;
+                                @media (min-width: $small) {
+                                    margin-right: 40px;
+                                }
+
+                                @media (max-width: $small) {
+                                    margin-right: 8px;
+                                }
                             }
                         }
                     }

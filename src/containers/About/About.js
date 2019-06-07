@@ -8,8 +8,10 @@ class About extends Component {
       <div className="About" id="about">
         <h1>ABOUT</h1>
         <div>
+          <div>고태건</div>
+          <div>2003.08.04</div>
           <h1>PROFILE</h1>
-          <span>고태건 2003. 08. 04</span> <br />
+          <span>고태건 2003.08.04</span>
           <p>
             한줄소개 <br/>
             Lorem ipsum dolor sit amet, consectetur <br/>

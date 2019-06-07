@@ -1,58 +1,118 @@
-@import '../../styles/_fonts.scss';
-@import '../../styles/_colors.scss';
+@import '../../styles/fonts';
+@import '../../styles/colors';
+@import '../../styles/breakpoints';
 
 .Projects{
     display: flex;
     flex-direction: column;
-    padding-top: 150px;
     color: $fontColor;
+
+    @media (min-width: $small) {
+        padding-top: 150px;
+    }
+    
+    @media (max-width: $small) {
+        padding-top: 93px;
+    }
 
     & > h1{
         text-align: center;
-        font-weight: 400;
+
+        @media (max-width: $small) {
+            font-weight: 400;
+        }
+        
+        @media (max-width: $small) {
+            font-size: 24px;
+            font-weight: 500;
+        }
     }
 
     & > div{
-        margin-top: 100px;
-        padding-left: 160px;
-        padding-right: 160px;
+        @media (min-width: $small) {
+            margin-top: 100px;
+            padding-left: 160px;
+            padding-right: 160px;
+        }
+
+        @media (max-width: $small) {
+            margin-top: 60px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
 
         & > div{
             &:nth-child(1){
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+
+                & > span{
+                    @media (max-width: $small) {
+                        font-size: 14px;
+                    }
+                }
             }
             
             &:nth-child(2){
-                margin-top: 60px;
                 display: flex;
                 flex-direction: row;
                 overflow-x: scroll !important;
+                
+                @media (min-width: $small) {
+                    margin-top: 60px;
+                }
+
+                @media (max-width: $small) {
+                    margin-top: 10px
+                }
 
                 & > div{
-                    margin-right: 20px;
+                    @media (min-width: $small) {
+                        margin-right: 20px;
+                    }
+
+                    @media (max-width: $small) {
+                        margin-right: 14px;
+                    }
                 }
             }
         }
     }
 
     .cards{
-        min-width: 228px !important; 
-        min-height: 370px !important;
-        border-radius: 12px;
         box-shadow: 0 24px 42px 0 rgba(0, 0, 0, 0.15);
         background-color: #222222;
+
+        @media (min-width: $small) {
+            min-width: 228px !important; 
+            min-height: 370px !important;
+            border-radius: 12px;
+        }
+
+        @media (max-width: $small) {
+            min-width: 90px !important;
+            min-height: 130px !important;
+            border-radius: 4px;
+        }
     }
 
     .year{
-        font-family: 'AppleSDGothicNeo';
-        font-size: 32px;
-        font-weight: bold;
-        background-color: #fff !important;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: 'AppleSDGothicNeo';
+        background-color: #fff !important;
         color: #000;
+
+        @media (min-width: $small) {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        @media (max-width: $small) {
+            font-size: 12px;
+            font-weight: bold;
+        }
     }
 }

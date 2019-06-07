@@ -7,7 +7,7 @@ class Main extends Component {
     return (
       <div className="Main" id="main">
         <h1>고태건</h1>
-        <span>The typeface doesn’t really matter. <br/>
+        <span>The typeface doesn’t really matter.
           as long as the text is good.</span>
         <a href="mailto:gtg7784@naver.com">CONTACT</a>
       </div>

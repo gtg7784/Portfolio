@@ -1,37 +1,95 @@
-@import '../../styles/_fonts.scss';
-@import '../../styles/_colors.scss';
+@import '../../styles/fonts';
+@import '../../styles/colors';
+@import '../../styles/breakpoints';
 
 .About{
     color: $fontColor;
-    height: calc(100vh - 175px);
-    padding-top: 175px;
+
+    @media (min-width: $small) {
+        height: calc(100vh - 175px);
+        padding-top: 175px;
+    }
+
+    @media (max-width: $small) {
+        margin-top: 412px;
+    }
 
     & > h1{
         text-align: center;
-        font-weight: 400;
+
+        @media (max-width: $small) {
+            font-weight: 400;
+        }
+        
+        @media (max-width: $small) {
+            font-size: 24px;
+            font-weight: 500;
+        }
     }
 
     & > div{
-        margin-top: 100px;
-        margin-left: calc(50% + 80px);
+        @media (min-width: $small) {
+            margin-top: 100px;
+            margin-left: calc(50% + 80px);
+        }
+
+        @media (max-width: $small) {
+            margin-top: 240px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        & > div{
+            @media (min-width: $small) {
+                display: none;
+            }
+
+            @media (max-width: $small) {
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
 
         & > h1{
             text-shadow: 10px 10px 10px rgba(2, 0, 0, 0.1);
-            font-weight: 400;
-            font-size: 32px;
             margin: 0px;
+            
+            @media (min-width: $small) {
+                font-weight: 400;
+                font-size: 32px;
+            }
+
+            @media (max-width: $small) {
+                margin-top: 14px;
+                font-family: NotoSansCJKkr;
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 16px;
+            }
         }
 
         & > span{
-            margin-top: 4px;
             text-shadow: 10px 10px 10px rgba(2, 0, 0, 0.1);
             font-size: 24px;
+
+            @media (max-width: $small) {
+                display: none;
+            }
         }
 
         & > p{
-            margin-top: 2px;
-            margin-bottom: 20px;
-            font-size: 24px;
+            @media (min-width: $small) {
+                margin-top: 2px;
+                margin-bottom: 20px;
+                font-size: 24px;
+            }
+
+            @media (max-width: $small) {
+                text-align: center;
+                font-size: 14px;
+                margin: 0;
+            }
         }
     }
 }
