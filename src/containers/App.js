@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Header from '../components/Header/Header'
 import Illust from '../components/Illust/Illust'
 import Sidebar from '../components/Sidebar/Sidebar'
+import Footer from '../components/Footer/Footer'
 
 import Main from './Main/Main'
 import About from './About/About'
@@ -24,7 +25,8 @@ class App extends Component {
         <About />
         <Projects />
         <Works />
-        <Awards/>
+        <Awards />
+        <Footer />
       </div>
     );
   }

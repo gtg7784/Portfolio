@@ -5,7 +5,7 @@ import './Awards.scss';
 class Awards extends Component {
   render() {
     return (
-      <div className="Awards" id="Awards">
+      <div className="Awards" id="awards">
         <h1>Awards</h1>
         <div>
           <div>

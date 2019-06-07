@@ -1,0 +1,13 @@
+@import '../../styles/colors';
+
+.Footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 4%;
+    color: $fontColor;
+
+    & > div > a{
+        text-decoration: none;
+        color: $fontColor;
+    }
+}

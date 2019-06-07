@@ -4,9 +4,8 @@
 .Awards{
     display: flex;
     flex-direction: column;
-    width: 84%;
-    height: calc(100vh - 24%);
-    padding: 8%;
+    height: calc(100vh - 100px);
+    padding-top: 100px;
     color: $fontColor;
     overflow-x: scroll;
 

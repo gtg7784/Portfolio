@@ -5,8 +5,8 @@ import './Projects.scss';
 class Projects extends Component {
   render() {
     return (
-      <div className="Projects" id="Projects">
-        <h1>Projects / Competitions</h1>
+      <div className="Projects" id="projects">
+        <h1>PROJECTS / COMPETITONS</h1>
         <div>
           <div>
             <span>Projects</span>

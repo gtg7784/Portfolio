@@ -4,36 +4,28 @@
 .Projects{
     display: flex;
     flex-direction: column;
-    width: 84%;
-    height: calc(100vh - 24%);
-    padding: 12% 8%;
+    padding-top: 150px;
     color: $fontColor;
-    overflow-x: scroll;
 
     & > h1{
         text-align: center;
-        font-family: Lato;
         font-weight: 400;
     }
 
     & > div{
-        &:not(:last-child){
-            margin-bottom: 150px;
-        }
+        margin-top: 100px;
+        padding-left: 160px;
+        padding-right: 160px;
 
         & > div{
-            width: 100%;
             &:nth-child(1){
                 display: flex;
+                flex-direction: row;
                 justify-content: space-between;
-
-                & > span{
-                    font-family: 'AppleSDGothicNeo';
-                }
             }
-
+            
             &:nth-child(2){
-                margin-top: 20px;
+                margin-top: 60px;
                 display: flex;
                 flex-direction: row;
                 overflow-x: scroll !important;
