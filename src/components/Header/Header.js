@@ -12,7 +12,7 @@ class Header extends Component {
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#works">Works</a></li>
-                <li><a href="#awards">Awards</a></li>
+                {/* <li><a href="#awards">Awards</a></li> */}
             </ul>
         </nav>
     );

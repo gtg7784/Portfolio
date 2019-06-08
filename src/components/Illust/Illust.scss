@@ -80,7 +80,8 @@
             margin-right: auto;
 
             @media (min-width: $small) {
-                top: 4274px;
+                top: 4000px;
+                width: 1050px;
             }
             @media (max-width: $small) {
                 top: 2712px;

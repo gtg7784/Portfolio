@@ -17,7 +17,7 @@
     & > h1{
         text-align: center;
 
-        @media (max-width: $small) {
+        @media (min-width: $small) {
             font-weight: 400;
         }
         
@@ -67,11 +67,35 @@
                 }
 
                 & > div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0 24px 42px 0 rgba(0, 0, 0, 0.15);
+                    font-family: 'AppleSDGothicNeo';
+                    background-color: #fff;
+                    color: #000;
+                    background-position: center center;
+                    background-size: 100%;
+            
                     @media (min-width: $small) {
+                        min-width: 225px !important; 
+                        min-height: 325px !important;
+                        max-width: 225px !important; 
+                        max-height: 325px !important;
+                        border-radius: 12px;
+                        font-size: 32px;
+                        font-weight: bold;
                         margin-right: 20px;
                     }
-
+            
                     @media (max-width: $small) {
+                        min-width: 90px !important;
+                        min-height: 130px !important;
+                        max-width: 90px !important;
+                        max-height: 130px !important;
+                        border-radius: 4px;
+                        font-size: 12px;
+                        font-weight: bold;
                         margin-right: 14px;
                     }
                 }
@@ -80,36 +104,34 @@
     }
 
     .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         box-shadow: 0 24px 42px 0 rgba(0, 0, 0, 0.15);
-        background-color: #222222;
+        font-family: 'AppleSDGothicNeo';
+        background-color: #fff;
+        color: #000;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
 
         @media (min-width: $small) {
             min-width: 228px !important; 
             min-height: 370px !important;
+            max-width: 228px !important; 
+            max-height: 370px !important;
             border-radius: 12px;
-        }
-
-        @media (max-width: $small) {
-            min-width: 90px !important;
-            min-height: 130px !important;
-            border-radius: 4px;
-        }
-    }
-
-    .year{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'AppleSDGothicNeo';
-        background-color: #fff !important;
-        color: #000;
-
-        @media (min-width: $small) {
             font-size: 32px;
             font-weight: bold;
         }
 
         @media (max-width: $small) {
+            min-width: 90px !important;
+            min-height: 130px !important;
+            max-width: 90px !important;
+            max-height: 130px !important;
+            border-radius: 4px;
             font-size: 12px;
             font-weight: bold;
         }

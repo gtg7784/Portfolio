@@ -5,9 +5,9 @@
     display: flex;
     flex-direction: column;
     color: $fontColor;
-
+    margin-bottom: 250px;
+    
     @media (min-width: $small) {
-        margin-top: 374px;
         height: calc(100vh - 150px);
         padding: 150px;
     }
@@ -19,7 +19,7 @@
     & > h1{
         text-align: center;
 
-        @media (max-width: $small) {
+        @media (min-width: $small) {
             font-weight: 400;
         }
         

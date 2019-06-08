@@ -18,7 +18,7 @@ class Illust extends Component {
         <img src={LandingIllust3} alt="" />
         <img src={LandingIllust4} alt="" />
         <img src={LandingIllust5} alt="" />
-        <img src={LandingIllust6} alt="" />
+        {/* <img src={LandingIllust6} alt="" /> */}
       </div>
     );
   }

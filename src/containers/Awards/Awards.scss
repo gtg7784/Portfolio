@@ -19,7 +19,7 @@
     & > h1{
         text-align: center;
 
-        @media (max-width: $small) {
+        @media (min-width: $small) {
             font-weight: 400;
         }
         
